@@ -1,0 +1,362 @@
+---
+import Layout from "../layouts/Layout.astro"
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+---
+
+<Layout title="casa en los sauces">
+
+
+  <header>
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg fondo-color-del-nav ">
+          <div class="container-fluid ">
+  
+            <a class="navbar-brand" href="#">Navbar</a>
+  
+            <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="hamburger__container">
+                <div class="hamburger__inner">
+                  <!-- Utiliza el ícono de hamburguesa o cruz según el estado del menú -->
+                  <i class="fas fa-bars logo-navbar"></i>
+                  <i class="fas fa-times logo-navbar"></i>
+                </div>
+                <div class="hamburger__hidden"></div>
+              </div>
+            </div>
+  
+  
+            <div class="collapse navbar-collapse posicion-nav" id="navbarSupportedContent">
+  
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link diseño-texto-navbar navbar-item" href="#sobremi" rel="noopener noreferrer">
+                    INICIO
+                  </a>
+                </li>
+                <li class="nav-item marginLeft-del-navBar">
+                  <a id="proyectos-ing" class="nav-link diseño-texto-navbar" href="#proyectos" rel="noopener noreferrer">PROYECTOS</a>
+            </li>
+                <li class="nav-item marginLeft-del-navBar">        
+                  <a id="perfil-ing" class="nav-link  diseño-texto-navbar" href="#perfil" rel="noopener
+                   noreferrer">ESTUDIO</a>
+                </li>
+               
+                <li class="nav-item marginLeft-del-navBar">
+                  <a id="contactar-ing" class="nav-link  diseño-texto-navbar" href="#contacto-ing" rel="noopener noreferrer">CONTACTAR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+        <!-- <div>
+          <img src="/src/img/Foto-oficina.png" alt="">
+         </div> -->
+  
+         <div id="carouselExampleControls" class="carousel slide fondo-principal" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2 class="BuffetStentor">BUFFET STENTOR</h2>
+              </div>
+              <!-- <img  src="/Astro/public/img/Foto-oficina.png" class="d-block w-100" alt="..." /> -->
+              <!-- <img src="/src/img/Foto-oficina.png" class="d-block w-100" alt="..." /> -->
+
+              <!-- <img src="/src/img/Casa-en-Los-Alisos-Nordelta/foto-1-copia.jpg" alt=""> -->
+
+            </div>
+            <!-- Otras imágenes del carrusel aquí -->
+          </div>
+        </div>
+      
+  </header>
+
+  
+
+     <div>
+
+      <div class="grid-container " style="margin-top:3em">
+        <div class="imagen-principal">
+           <img src="/src/img/Casa-en-Los-Alisos-Nordelta/foto-1.jpg" alt=""> 
+        </div>
+        <div class="imagenes-pequenas">
+          <img src="/src/img/Casa-en-Los-Alisos-Nordelta/foto-1.jpg" alt="">
+          <img src="/src/img/Casa-en-Los-Alisos-Nordelta/foto-1.jpg" alt="">
+          <img src="/src/img/Casa-en-Los-Alisos-Nordelta/foto-1.jpg" alt="">
+          <img src="/src/img/Casa-en-Los-Alisos-Nordelta/foto-1.jpg" alt="">
+        </div>
+      </div>
+
+<div class="p-2">
+<h4>Casa · 387m² · 6 ambientes</h4>
+<h4 class="linea-inferior">  <i class="fa-solid fa-location-dot"></i> LOS Sauces-nordelta, Los Sauces, Nordelta</h4>
+</div>
+
+<div class="fondo-ubicacion">
+  <div class="mapa-ubicacion">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.167231824098!2d-58.5046214!3d-34.6347011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9f09395ab53%3A0xcb7f097df89cf413!2sClub%20Atl%C3%A9tico%20Stentor!5e0!3m2!1ses!2sar!4v1701753177619!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+   </iframe>
+    </div>
+  </div>
+
+
+
+
+<!-- ************* -->
+<!-- *** LOGOS *** -->
+<!-- ************* -->
+<ul class="Logos">
+
+  <li class="padding-iconos" style="background-color: rgb(21, 188, 188)" >
+    <i class="fa-solid fa-ruler-vertical"></i>
+    975 m² tot.
+  </li>
+
+  <li class="padding-iconos" style="background-color: rgb(211, 88, 88)" >
+    <i class="fa-solid fa-expand"></i>
+    387 m² cub.
+  </li>
+
+  <li class="padding-iconos" style="background-color: rgb(255, 0, 0)" >
+    <i class="fa-solid fa-door-open"></i> 
+    6 amb.
+  </li>
+
+  <li class="padding-iconos" style="background-color: rgb(55, 90, 150)" >
+    <i class="fa-solid fa-bath"></i>
+    3 baños
+  </li>
+
+  <li class="padding-iconos" style="background-color: rgb(131, 55, 50)" >
+    <i class="fa-solid fa-bed"></i>
+    4 dorm.
+  </li>
+
+  <li class="padding-iconos" style="background-color: rgb(51, 225, 200)" >
+    <i class="fa-solid fa-toilet"></i> 
+    1 toilette
+  </li>
+
+  <li class="padding-iconos" style="background-color: rgb(51, 255, 0)" >
+    <i class="fa-regular fa-compass"></i> 
+    NE.
+  </li>
+
+  <li class="padding-iconos" style="background-color: rgb(255, 251, 0)" >
+    <i class="fa-solid fa-sun"></i> 
+    Muy luminoso
+  </li>
+
+</ul>
+
+
+ 
+
+<div>
+  <p>Casa en Los Sauces al Lago, Nordelta.
+    PB: Living y comedor, toilette, amplio playroom, cocina muy grande con barra y banquetas, mucho lugar de guardado.
+    Doble galería cerrada con reiki, parrilla, pileta climatizada, lote al lago.
+    PA: suite principal con vestidor, suite junior, 2 cuartos que comparten baño con su playroom privado.</p>
+   
+  <button class="button" id="mostrar-parrafo">Leer descripcion completa <i style="padding-left: 0.5em;" class="fa-solid fa-arrow-down"></i></button> 
+  
+  <p id="parrafo-oculto">Corredor interviniente CABA y PBA: Juan Pablo Sanguinetti CMCPSI 6449 - CUCICBA 6630. La tasación, intermediación y la conclusión de las operaciones sobre esta propiedad son actividades exclusivas de este corredor matriculado, conforme las previsiones de la ley 20.266, la ley CABA 2340, la ley provincial 10.973 y sus modif. y las normas reglamentarias dictadas por los colegios departamentales. Las oficinas asociadas a la red Keller Williams actúan en forma independiente, brindando servicios a corredores, agentes y al público en general, y su
+    intervención se limita a la prestación de servicios inmobiliarios que no incluyen actos de corretaje ni intermediación inmobiliaria.</p>
+</div> 
+
+     </div>
+     
+
+    
+     <script >
+      import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+  
+      
+     const mostrarParrafo = document.getElementById("mostrar-parrafo");
+ const parrafoOculto = document.getElementById("parrafo-oculto");
+
+ mostrarParrafo.addEventListener("click", () => {
+   parrafoOculto.classList.toggle("visible");
+ });
+      </script> 
+
+
+
+
+</Layout>
+
+  <style>
+#parrafo-oculto {
+  display: none;
+}
+
+
+ #mostrar-parrafo:focus + #parrafo-oculto {
+  display: block;
+} 
+.button{
+  border: none;
+  background-color: white;
+}
+
+/***************/
+/*** GALERIA ***/
+/***************/
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:
+    "imagen pequenas";
+    gap: 10px;
+    padding: 5px;
+}
+.imagen-principal {
+  grid-area: imagen;
+}
+.imagenes-pequenas {
+  grid-area: pequenas;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.imagenes-pequenas img {
+  width: 100%;
+  height: auto;
+  
+}
+
+
+
+/************************/
+/*** MENU HAMBURGUESA ***/
+/************************/
+.navbar-toggler{
+    border:solid 2px transparent;
+} 
+  .logo-navbar {
+    color: var(--color-hover);
+    font-size: 1.5em;
+  }
+  .navbar-toggler[aria-expanded="true"] .fa-bars {
+    display: none;
+  }
+  .navbar-toggler[aria-expanded="true"] .fa-times {
+    display: inline-block;
+  }
+  .navbar-toggler[aria-expanded="false"] .fa-bars {
+    display: inline-block;
+  }
+  .navbar-toggler[aria-expanded="false"] .fa-times {
+    display: none;
+  }
+  .navbar-collapse {
+    transition: 0.5s ;
+  }
+  /* buscar tipografia de arquitectura */
+ .diseño-texto-navbar{
+  color: rgb(151, 109,0);
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  /* font-weight: 600; */
+  transition: 0.05s;
+ }
+ .diseño-texto-navbar:hover{
+  color: rgb(151, 109,0);
+  transition: 0.5s;
+ }
+  .fondo-color-del-nav{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+ /* backdrop-filter: blur(5px);  Define el nivel de desenfoque */
+}
+.posicion-nav {
+    justify-content: end;
+    margin-right: 10%;
+    /* width: auto; */
+}
+    img {
+       /* margin-top: -60px;  */
+    width: 100%;
+    height: 100%;
+  }
+  
+ 
+
+
+/**************************/
+/*** TITULO INFORMACION ***/
+/**************************/
+.linea-inferior{
+  padding-top: 1em;
+  border-top: solid #ededed 2px;
+}
+
+
+/*******************/
+/*** MAPA GOOGLE ***/
+/*******************/
+.fondo-ubicacion {
+    padding: 1em 1em 3em 1em;
+    
+}
+.mapa-ubicacion iframe{
+    border-radius: 20px;
+    width: 100%;
+  height: 284px;
+}
+
+
+
+/*************/
+/*** logos ***/
+/*************/
+.Logos{
+  border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 2em 3em 2em 3em;
+    /* padding: 0; */
+    /* overflow: hidden; */
+}
+.Logos li{
+  list-style-type: none;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-right: 0;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    /* white-space: nowrap; */
+}
+
+
+
+
+
+
+
+
+.descripcion {
+  max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto;
+  text-align: justify; /* Esto alinea el texto justificado */
+}
+
+.texto-corto {
+  /* Estilo para el texto corto */
+}
+
+.texto-completo {
+  /* Estilo para el texto completo */
+}
+
+
+
+  </style>

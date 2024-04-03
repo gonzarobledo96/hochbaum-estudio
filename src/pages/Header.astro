@@ -1,0 +1,181 @@
+
+
+<!-- ---
+import 'bootstrap/dist/css/bootstrap.min.css';
+--- -->
+
+<header>
+  <div class="fixed-top">
+    <nav class="navbar navbar-expand-lg fondo-color-del-nav ">
+        <div class="container-fluid ">
+
+          <a class="navbar-brand" href="#">Navbar</a>
+
+          <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger__container">
+              <div class="hamburger__inner">
+                <!-- Utiliza el ícono de hamburguesa o cruz según el estado del menú -->
+                <i class="fas fa-bars logo-navbar"></i>
+                <i class="fas fa-times logo-navbar"></i>
+              </div>
+              <div class="hamburger__hidden"></div>
+            </div>
+          </div>
+
+
+          <div class="collapse navbar-collapse posicion-nav" id="navbarSupportedContent">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link diseño-texto-navbar navbar-item" href="#" rel="noopener noreferrer">
+                  INICIO
+                </a>
+              </li>
+              <li class="nav-item marginLeft-del-navBar">
+                <a id="proyectos-ing" class="nav-link diseño-texto-navbar" href="#proyectos" rel="noopener noreferrer">PROYECTOS</a>
+          </li>
+              <li class="nav-item marginLeft-del-navBar">        
+                <a id="perfil-ing" class="nav-link  diseño-texto-navbar" href="#estudio" rel="noopener
+                 noreferrer">ESTUDIO</a>
+              </li>
+             
+              <li class="nav-item marginLeft-del-navBar">
+                <a id="contactar-ing" class="nav-link  diseño-texto-navbar" href="#footer" rel="noopener noreferrer">CONTACTAR</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+      <!-- <div>
+        <img src="/src/img/Foto-oficina.png" alt="">
+       </div> -->
+
+       <div id="carouselExampleControls" class="carousel slide fondo-principal" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <img class="titulo-principal"  src="/src/img/prueba.png"  alt="..." />
+            </div>
+            <!-- <img  src="/Astro/public/img/Foto-oficina.png" class="d-block w-100" alt="..." /> -->
+            <img  src="/src/img/Foto-oficina.png" class="d-block w-100" alt="..." />
+          </div>
+          <!-- Otras imágenes del carrusel aquí -->
+        </div>
+      </div>
+    
+</header>
+
+<script>
+  import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+  </script>
+
+
+
+<style>
+/*************************/
+/*** MENU HAMBURGUESA ***/
+/***********************/
+.navbar-toggler{
+    border:solid 2px transparent;
+} 
+  .logo-navbar {
+    color: var(--color-hover);
+    font-size: 1.5em;
+  }
+  .navbar-toggler[aria-expanded="true"] .fa-bars {
+    display: none;
+  }
+  .navbar-toggler[aria-expanded="true"] .fa-times {
+    display: inline-block;
+  }
+  .navbar-toggler[aria-expanded="false"] .fa-bars {
+    display: inline-block;
+  }
+  .navbar-toggler[aria-expanded="false"] .fa-times {
+    display: none;
+  }
+  .navbar-collapse {
+    transition: 0.5s ;
+  }
+  /* buscar tipografia de arquitectura */
+ .diseño-texto-navbar{
+  color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+
+  /* font-weight: 300; */
+  transition: 0.05s;
+  letter-spacing: 2px;
+ }
+ .diseño-texto-navbar:hover{
+  color: rgb(151, 109,0);
+  transition: 0.5s;
+ }
+  .fondo-color-del-nav{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+ /* backdrop-filter: blur(5px);  Define el nivel de desenfoque */
+}
+.posicion-nav {
+    justify-content: end;
+    margin-right: 10%;
+    /* width: auto; */
+}
+  img {
+     /* margin-top: -60px;  */
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*************************/
+/*** TITULO PRINCIPAL ***/
+/***********************/
+
+.carousel-caption {
+    /* position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem; */
+    right: 0%;
+    bottom: 0em;
+    left:0%;
+    padding-top: 0em;
+    padding-bottom:0em;
+    
+  top: 55%;
+  transform: translateY(-55%);
+}
+
+
+
+
+.titulo-principal{
+  width:auto;
+}
+
+
+
+@media (max-width: 600px) {
+  .carousel-caption {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-55%);
+  /* width: 100%; */
+ 
+}
+
+
+.titulo-principal{
+  
+}
+
+}
+
+
+
+
+
+</style>
